@@ -43,7 +43,7 @@ const Sidebar = () => {
               <div className="pr-4">
                 <GoogleLogin
                   onSuccess={(credentialResponse) => {
-                    console.log(credentialResponse);
+                    console.log(credentialResponse?.credential);
                   }}
                   onError={() => {
                     console.log("Login Failed");
